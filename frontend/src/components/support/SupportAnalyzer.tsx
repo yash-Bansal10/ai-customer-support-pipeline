@@ -20,8 +20,12 @@ export default function SupportAnalyzer() {
     try {
       const response = await analyzeMessage(message);
       setResult(response);
-    } catch (err: any) {
-      setError(err.message || "An unexpected error occurred.");
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError("An unexpected error occurred.");
+      }
     } finally {
       setIsLoading(false);
     }
