@@ -123,13 +123,19 @@ Hiver/
 
 You can reproduce the headline evaluation results in under 15 minutes.
 
-### Step 1: Clone & Setup Backend Environment
+### Step 1: Clone and Install
 ```bash
-git clone <repo-url>
-cd Hiver/backend
+git clone https://github.com/yash-Bansal10/ai-customer-support-pipeline.git
+cd ai-customer-support-pipeline
+
+# 1. Setup Backend
+cd backend
 python -m venv venv
-venv\Scripts\activate        # On Linux/Mac: source venv/bin/activate
+```
+*(Activate venv: `source venv/bin/activate` on Mac/Linux or `.\venv\Scripts\activate` on Windows)*
+```bash
 pip install -r requirements.txt
+cd ..
 ```
 
 ### Step 2: Configure API Keys
