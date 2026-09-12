@@ -36,7 +36,7 @@ Based on exploratory analysis of the AppleSupport Twitter dataset, I defined a s
 - **Negative Examples**:
   - "My FaceTime is crashing." (DEVICE_ISSUE)
 
-## 5. OTHER / AMBIGUOUS
+## 5. OTHER
 - **Definition**: The request does not fit into the above categories, or is too vague to classify without further information.
 - **Positive Examples**:
   - "Hey @AppleSupport, can you help me?"
