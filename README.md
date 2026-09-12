@@ -9,12 +9,15 @@ This repository implements a grounded, end-to-end AI customer support pipeline b
 *(See it in action: The React dashboard visualizes the agent's intent classification, deterministic risk assessment, and RAG retrieval process.)*
 
 ### Main Interface
+
 ![Dashboard Screenshot](docs/assets/dashboard.png)
 
 ### Example Query
+
 ![Using Example](docs/assets/using_example.png)
 
 ### RAG Response & Evidence
+
 ![Agent Response](docs/assets/response.png)
 
 ---
@@ -152,6 +155,8 @@ python -m venv venv
 ```
 
 *(Activate venv: `source venv/bin/activate` on Mac/Linux or `.\venv\Scripts\activate` on Windows)*
+
+**Note**: Start the frontend in new terminal while dependencies are being installed.
 
 ```bash
 pip install -r requirements.txt
