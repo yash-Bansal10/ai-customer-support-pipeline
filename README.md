@@ -4,6 +4,21 @@ This repository implements a grounded, end-to-end AI customer support pipeline b
 
 ---
 
+## 📸 Interactive Dashboard
+
+*(See it in action: The React dashboard visualizes the agent's intent classification, deterministic risk assessment, and RAG retrieval process.)*
+
+### Main Interface
+![Dashboard Screenshot](docs/assets/dashboard.png)
+
+### Example Query
+![Using Example](docs/assets/using_example.png)
+
+### RAG Response & Evidence
+![Agent Response](docs/assets/response.png)
+
+---
+
 # 1. Problem
 
 Customer support agents receive thousands of repetitive messages that could theoretically be automated. However, relying on a naive LLM chatbot to blindly answer questions risks hallucinated, incorrect, or contradictory information, which destroys brand trust.
