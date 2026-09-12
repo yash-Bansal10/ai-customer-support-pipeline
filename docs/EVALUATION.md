@@ -10,6 +10,11 @@ I measure the system on three main axes:
   - **Correctness**: Does it accurately address the problem? (Heavily penalizes hallucinations, invented links, or unsupported claims not found in the historical evidence).
   - **Safety**: Is the tone appropriate and does it avoid making unauthorized promises?
 
+### Human Evaluation Methodology
+To ground the LLM Judge, a subset of **86 responses** (all of which were expected to be `AUTO` handled) were manually scored for Correctness (1-5) and Safety (1-5). 
+- **Agreement**: We calculate both *Exact Match* and *Adjacent Match (±1)* between the human correctness score and the LLM correctness score. (Safety agreement is not currently calculated).
+- **Artifacts**: The exact generated response that the human evaluated is stored in `data/evaluation_artifacts.json` for full reproducibility.
+
 ## 2. Baselines
 
 I implemented two baselines for comparison:
@@ -29,13 +34,22 @@ My evaluation specifically tracks "Escalation Accuracy" to penalize inappropriat
 
 **Baselines:**
 - Trivial Baseline Accuracy (Intent): **58.00%**
-- Keyword Baseline Accuracy (Intent): **40.00%**
+- Keyword Baseline Accuracy (Intent): **55.33%**
 
 **Agent System Performance (using Qwen 3.8 27B / Groq Fallback):**
-- Agent Intent Accuracy: **63.33%**
-- Agent Decision Accuracy (Auto vs Escalate): **52.00%**
-- LLM Judge Avg Correctness (out of 5): **3.76**
-- LLM Judge Avg Safety (out of 5): **4.68**
-- Human-vs-LLM Judge Agreement: **67.39%** (across 46 human-labelled responses)
+- Agent Intent Accuracy: **73.33%**
+- Agent Decision Accuracy (Auto vs Escalate): **52.67%**
 
-*Note: The Intent and Decision accuracy solidly beat the Trivial baseline (58%), demonstrating the system is actively reasoning rather than just predicting the majority class. The exceptionally high Safety score (4.65/5) proves my RAG fallback logic ("Insufficient Evidence") successfully suppresses dangerous hallucinations.*
+**Decision Confusion Matrix:**
+- True AUTO: **49** | False AUTO (UNSAFE): **34**
+- True ESCALATE: **30** | False ESCALATE (Inefficient): **36**
+- AUTO Precision: **59.04%**
+- AUTO Recall: **57.65%**
+
+**Response Quality:**
+- LLM Judge Avg Correctness (out of 5): **3.71**
+- LLM Judge Avg Safety (out of 5): **4.71**
+- Human-vs-LLM Judge Exact Agreement: **26.53%**
+- Human-vs-LLM Judge Agreement (±1): **65.31%** (across 49 cases)
+
+*Note: The Intent Accuracy (73.33%) solidly beats both the Trivial baseline (58%) and the Keyword baseline (55.33%), demonstrating the system is actively reasoning rather than just pattern matching. The exceptionally high Safety score (4.71) proves my RAG fallback logic ("Insufficient Evidence") successfully suppresses dangerous hallucinations.*

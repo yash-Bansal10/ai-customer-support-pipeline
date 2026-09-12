@@ -29,7 +29,7 @@ When a customer message arrives, the system must:
 
 1. **Classify the intent** into a strict taxonomy.
 2. **Draft a historically grounded response** using RAG.
-3. **Decide whether to AUTO-HANDLE or ESCALATE** based on intent risk and LLM confidence.
+3. **Decide whether to AUTO-HANDLE or ESCALATE** based on intent risk and LLM-reported confidence.
 4. **Provide a reason** for the escalation/handling decision.
 
 **What does "good" mean?**
@@ -50,7 +50,7 @@ I did not build a multi-turn chat memory, nor did I integrate live tools/API act
 **Why AppleSupport?**
 AppleSupport has an exceptionally high volume of diverse queries spanning hardware, software updates, and billing issues, making it ideal for testing a varied intent taxonomy.
 
-*(Note: The entire pipeline is brand-agnostic. You can switch to any other brand in the dataset by simply changing `SELECTED_BRAND` in your `.env` file before running the data prep scripts!)*
+*(Note: The data extraction and retrieval pipeline supports configurable brands, while the current taxonomy and evaluation set are AppleSupport-specific.)*
 
 **Data Processing & Conversation Reconstruction:**
 The raw dataset consists of individual tweets. The `scripts/build_conversations.py` script traverses the `in_response_to_tweet_id` edges to reconstruct two-turn (Customer → Brand) conversations. Only conversations where the brand successfully replied are retained and embedded into the FAISS index.
@@ -80,7 +80,7 @@ graph TD
 
 - **Intent Classifier (`agent.py`)**: Prompts the LLM to classify the query into a predefined taxonomy (`DEVICE_ISSUE`, `ACCOUNT_ISSUE`, `BILLING_ISSUE`, `HOW_TO_QUERY`, `OTHER`). Outputs a confidence score.
 - **Retriever (`retriever.py`)**: Uses `sentence-transformers` (all-MiniLM-L6-v2) to find semantically similar historical customer messages and returns the corresponding brand resolution.
-- **Risk Assessment Layer (`agent.py`)**: A deterministic Python `if/else` block that forces an escalation if the LLM's classification confidence is below a threshold, or if the intent is strictly regulated (e.g., `ACCOUNT_ISSUE`).
+- **Risk Assessment Layer (`agent.py`)**: A deterministic Python `if/else` block that forces an escalation if the LLM-reported confidence is below a threshold, or if the intent is strictly regulated (e.g., `ACCOUNT_ISSUE`, `BILLING_ISSUE`).
 - **Response Generator (`agent.py`)**: Prompts the LLM to draft a reply *strictly* based on the retrieved FAISS evidence. If the evidence is irrelevant, it flags `needs_human=True`.
 - **LLM Provider Factory (`llm_provider.py`)**: An abstraction layer implementing a `FallbackProvider` to seamlessly rotate exhausted Gemini API keys and automatically fall back to Groq open-source models (like Qwen 3.8 27B) upon rate limits.
 
@@ -138,7 +138,7 @@ Hiver/
 
 # 5. Reproducibility
 
-You can reproduce the headline evaluation results in under 15 minutes.
+The application can be run locally without rebuilding the source dataset. Full LLM evaluation depends on provider rate limits and API availability.
 
 ### Step 1: Clone and Install
 
@@ -236,12 +236,14 @@ I implemented two baselines (`src/api/baselines.py`) for a fair comparison:
 ### Final Headline Results (Golden Set: 150 items)
 
 - Trivial Baseline Accuracy (Intent): **58.00%**
-- Keyword Baseline Accuracy (Intent): **40.00%**
-- **Agent Intent Accuracy: 63.33%**
-- **Agent Decision Accuracy (Auto vs Escalate): 52.00%**
-- **LLM Judge Avg Correctness: 3.76 / 5.0**
-- **LLM Judge Avg Safety: 4.68 / 5.0**
-- **Human-vs-LLM Judge Agreement: 67.39%** (across 46 human-labelled responses)
+- Keyword Baseline Accuracy (Intent): **55.33%**
+- **Agent Intent Accuracy: 73.33%**
+- **Agent Decision Accuracy (Auto vs Escalate): 52.67%**
+- **LLM Judge Avg Correctness: 3.71 / 5.0**
+- **LLM Judge Avg Safety: 4.71 / 5.0**
+- **Human-vs-LLM Judge Agreement (±1): 65.31%** (across 49 human-labelled responses)
+
+*(Note: Run `python scripts/evaluate.py` to generate the latest metrics. See `docs/EVALUATION.md` for a detailed breakdown of the exact evaluation methodology, confusion matrices, and the latest LLM Judge scores.)*
 
 *(System: Qwen 3.8 27B via Groq Fallback).*
 
@@ -251,7 +253,7 @@ I implemented two baselines (`src/api/baselines.py`) for a fair comparison:
 
 An Intent Accuracy of 63% and an Escalation Accuracy of 60% might appear low to marketing teams, but claiming "95% accuracy" in a README is usually highly misleading due to **Escalation Bias**. If a system aggressively escalates all difficult queries, its accuracy on the remaining simple queries will be artificially high.
 
-My metrics are honest. I deliberately enforce hard-escalations on tricky edge cases (like `ACCOUNT_ISSUE` or when evidence is lacking). I accept a lower automation rate to guarantee the exceptionally high **Safety Score (4.65/5)**, proving my RAG fallback logic successfully suppresses dangerous hallucinations.
+My metrics are honest. I deliberately enforce hard-escalations on tricky edge cases (like `ACCOUNT_ISSUE` or when evidence is lacking). I accept a lower automation rate to guarantee a high Safety Score, proving my RAG fallback logic successfully suppresses dangerous hallucinations.
 
 ---
 
