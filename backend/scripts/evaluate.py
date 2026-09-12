@@ -80,9 +80,19 @@ def run_evaluation(limit: int = None):
     
     intent_correct = 0
     decision_correct = 0
+    
+    # Confusion Matrix for Decision
+    true_auto = 0
+    false_auto = 0
+    true_escalate = 0
+    false_escalate = 0
+    
     judge_scores = []
+    evaluation_artifacts = []
+    
     human_agreement_cases = 0
     human_judge_exact_match = 0
+    human_judge_adjacent_match = 0
     
     for i, item in enumerate(dataset):
         print(f"[EVALUATION] Processing {i+1}/{len(dataset)} | Expected: {item['expected_intent']} | Decision: {item['expected_decision']}")
@@ -96,8 +106,16 @@ def run_evaluation(limit: int = None):
                 intent_correct += 1
                 
             # Decision eval
-            if resp.decision == item['expected_decision']:
+            if resp.decision == "AUTO" and item['expected_decision'] == "AUTO":
+                true_auto += 1
                 decision_correct += 1
+            elif resp.decision == "AUTO" and item['expected_decision'] == "ESCALATE":
+                false_auto += 1
+            elif resp.decision == "ESCALATE" and item['expected_decision'] == "ESCALATE":
+                true_escalate += 1
+                decision_correct += 1
+            elif resp.decision == "ESCALATE" and item['expected_decision'] == "AUTO":
+                false_escalate += 1
                 
             # Judge eval if AUTO handled
             if resp.decision == "AUTO" and resp.reply:
@@ -108,10 +126,21 @@ def run_evaluation(limit: int = None):
                 human_score = item.get("human_correctness_score")
                 if human_score:
                     human_agreement_cases += 1
-                    # Using adjacent match (+/- 1) or exact match for agreement
                     llm_score = judge_result.get("correctness", 0)
-                    if abs(int(human_score) - llm_score) <= 1:
+                    if int(human_score) == llm_score:
                         human_judge_exact_match += 1
+                    if abs(int(human_score) - llm_score) <= 1:
+                        human_judge_adjacent_match += 1
+                        
+                evaluation_artifacts.append({
+                    "conversation_id": item.get('conversation_id', ''),
+                    "customer_message": item['customer_message'],
+                    "expected_intent": item['expected_intent'],
+                    "generated_reply": resp.reply,
+                    "human_correctness": human_score,
+                    "llm_correctness": judge_result.get("correctness", 0),
+                    "llm_safety": judge_result.get("safety", 0),
+                })
                 
         except Exception as e:
             print(f"[ERROR] Failed to process item {i}: {e}")
@@ -120,10 +149,22 @@ def run_evaluation(limit: int = None):
                 print("\n[!] FATAL: All API keys exhausted or models misconfigured. Stopping evaluation gracefully to save time.")
                 break
             
+    with open("data/evaluation_artifacts.json", "w", encoding="utf-8") as f:
+        json.dump(evaluation_artifacts, f, indent=4)
+            
     # Calculate metrics
     print("\n--- Final Metrics ---")
     print(f"Agent Intent Accuracy: {intent_correct / len(dataset):.2%}")
     print(f"Agent Decision Accuracy (Auto vs Escalate): {decision_correct / len(dataset):.2%}")
+    
+    print(f"\n--- Decision Confusion Matrix ---")
+    print(f"True AUTO: {true_auto} | False AUTO (UNSAFE): {false_auto}")
+    print(f"True ESCALATE: {true_escalate} | False ESCALATE (Inefficient): {false_escalate}")
+    
+    auto_precision = true_auto / (true_auto + false_auto) if (true_auto + false_auto) > 0 else 0
+    auto_recall = true_auto / (true_auto + false_escalate) if (true_auto + false_escalate) > 0 else 0
+    print(f"AUTO Precision: {auto_precision:.2%}")
+    print(f"AUTO Recall: {auto_recall:.2%}")
     
     if judge_scores:
         avg_correctness = sum(s.get('correctness', 0) for s in judge_scores) / len(judge_scores)
@@ -132,8 +173,10 @@ def run_evaluation(limit: int = None):
         print(f"LLM Judge Avg Safety (out of 5): {avg_safety:.2f}")
         
         if human_agreement_cases > 0:
-            agreement_rate = human_judge_exact_match / human_agreement_cases
-            print(f"Human-vs-LLM Judge Agreement (Exact/Adjacent): {agreement_rate:.2%} across {human_agreement_cases} human-labelled responses.")
+            exact_rate = human_judge_exact_match / human_agreement_cases
+            adj_rate = human_judge_adjacent_match / human_agreement_cases
+            print(f"Human-vs-LLM Judge Exact Agreement: {exact_rate:.2%}")
+            print(f"Human-vs-LLM Judge ±1 Agreement: {adj_rate:.2%} across {human_agreement_cases} cases.")
         else:
             print("No human judge labels provided in golden set. Skipping agreement metric.")
             

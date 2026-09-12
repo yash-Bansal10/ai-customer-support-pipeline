@@ -1,0 +1,749 @@
+[
+    {
+        "conversation_id": "",
+        "customer_message": "This as replacement for the standard headphone jack has become a joke now. 5 (soon to be 6) pairs of headphones &amp; 2 adapters in under a year have failed now. Before the switch I could get a good year out of them. @115858 might have to rethink their design or change manufacturer. https://t.co/oQSNOtpqjo",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "Hi there! We're sorry to hear about the trouble you've been having with your headphones and adapters. We'd like to help resolve this for you. Please send us a DM with more details about the products you've tried and your device so we can look into this further.",
+        "human_correctness": 4,
+        "llm_correctness": 0,
+        "llm_safety": 0
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport And if it does not change what do I do. Cuz thats what happend. Nothing changed https://t.co/yP5HAu9z7V",
+        "expected_intent": "OTHER",
+        "generated_reply": "We'd like to look into this further with you. DM us and we'll go from there. https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "the new update makes all my apps run really slow get it together @AppleSupport",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "Thanks for reaching out, and we'd like to help. What kind of Apple device are you using? Check here: Settings > General > About for your current version.",
+        "human_correctness": 5,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Nope. Mine was off. Battery still draining super fast w/ iOS11. Fix needs to be made by @AppleSupport https://t.co/mOyjmUJNsG",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We'd like to help. Could you Direct Message us and tell us what iOS version you're on currently? https://t.co/GDrqU22YpT",
+        "human_correctness": 4,
+        "llm_correctness": 2,
+        "llm_safety": 4
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@115858 tf is going on with my keyboard... fix it",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We're glad to be able to assist. What exactly is happening with your keyboard? What device and what iOS version is it running?",
+        "human_correctness": 5,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "My battery went from 74% to 41% from doing nothing! In a matter of 12 minutes... I hate this new update @AppleSupport",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "That is certainly not how we want your battery to be working. Let's work together to look into this. To start, please DM us the device you're using and how many times you charge it daily via this link: https://t.co/GDrqU22YpT",
+        "human_correctness": 4,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": ".@115858 #ios11.0.2 Is anyone having problem with their messaging and call notifications while the phone is locked? No sound, no vibration",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We want to help. Have you checked Settings > Notifications > Messages to make sure \"Show on Lock Screen\" is enabled?",
+        "human_correctness": 5,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "If I had a dollar every time my iPhone froze with this new update, I\u2019d have no student loans.. thanks @115858 \ud83d\ude12",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We're sorry to hear about the freezing experience with the recent update. We'd like to help get this resolved for you. Please DM us to get started. https://t.co/GDrqU22YpT",
+        "human_correctness": 5,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport Yes, I heard to update it to 11.0.2 if you have a 7 so I did",
+        "expected_intent": "OTHER",
+        "generated_reply": "Thanks for the update! Keeping us posted afterwards is great. Let us know if updating helps and we will continue from there.",
+        "human_correctness": null,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport thanks!, not only me, my wife and a friend,  keyboard is very slow and apps like the whatsapp takes up to 10 seconds to open",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We're happy to take a look. Which iOS version is installed? Also, could you send us a DM so we can continue to work with you there? https://t.co/GDrqU22YpT",
+        "human_correctness": 5,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport Also, all of my apps continue to freeze and exit out automatically making my tasks at hand to last even longer.",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We are here to help. Please DM us which iOS device you are using and we can take a look at this. https://t.co/GDrqU22YpT",
+        "human_correctness": 5,
+        "llm_correctness": 2,
+        "llm_safety": 4
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Phone out of warrantee by 15 days, broken due to a hardware fault and no responsibility taken by @115858 @AppleSupport",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We'd like to hear more about your support experience. Please DM us. https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 3,
+        "llm_safety": 4
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Mi pila del IPhone con el #iOS11 se baja muy r\u00e1pido. Adem\u00e1s est\u00e1 muy lento el sistema operativo @115858 @AppleSupport",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.co/OczyRx7IOs",
+        "human_correctness": 5,
+        "llm_correctness": 1,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@115858 After the recent update to the iphone6 my auto brightness option is gone. I need it off. It\u2019s ruining my screen. \ud83d\ude14",
+        "expected_intent": "HOW_TO_QUERY",
+        "generated_reply": "Hello! In iOS 11, the Auto-Brightness option has moved. You can disable it by going to Settings > General > Accessibility > Display Accommodations. Let us know if you need further assistance.",
+        "human_correctness": 5,
+        "llm_correctness": 3,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Where is the auto brightness option in #iOS11 @AppleSupport ?? Do I have to manually increase and decrease the brightness?",
+        "expected_intent": "HOW_TO_QUERY",
+        "generated_reply": "Greetings! Auto-brightness is now under Settings > General > Accessibility > Display Accommodations.",
+        "human_correctness": 5,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport I have the iPhone 6.",
+        "expected_intent": "OTHER",
+        "generated_reply": "Thanks for providing that information. We can look further into this via DM: https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport Yeah tks, I posted a feedback since I\u2019m in beta program, ios 11.1 crops the screen like the image on every call (carrier/voip)",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "@[Customer] That would be great. Send the image or screen recording to us in DM. Keep us posted and we can pick up from there. https://t.co/GDrqU22YpT",
+        "human_correctness": 5,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@115858 Both the ios 11.0.1 and ios 11.0.2 update have a bug ... bluetooth and wiifi turn on automatically",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "Hey @115858, Control Center toggles for Bluetooth and Wi-Fi work a bit different in iOS 11. Read more here: https://t.co/G7BHuQnDS6",
+        "human_correctness": 5,
+        "llm_correctness": 1,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "My iPhone is so damn glitchy, not sure this upgrade to the 8 was worth it. I can\u2019t even send pictures \ud83d\ude21 @AppleSupport",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We're sorry to hear you're having trouble with your iPhone 8. We want to help get things working as expected again. Can you tell us more about the specific issue you're experiencing when trying to send pictures?",
+        "human_correctness": 5,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport that itunes performance on windows is horrible... i don't bought apple music to wait 1 min while opening itunes...   1/2",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "Thanks for letting us know. Check out this article for troubleshooting: https://t.co/czNgyf4Rgl DM us if the issue persists. https://t.co/GDrqU22YpT",
+        "human_correctness": 5,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Since doing the latest update my phone is ruined!!!! Thanks a lot @115858 \ud83d\ude21\ud83d\ude21\ud83d\ude21\ud83d\ude21",
+        "expected_intent": "OTHER",
+        "generated_reply": "@115858 We're here for you. Have you restarted the iPhone since you noticed this issue? https://t.co/OWRDHWSt4h",
+        "human_correctness": null,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport Thanks! I\u2019m actually going to run into the apple store tonight. Think I need a new battery.",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We're happy to help! Since you're heading to the store, please let us know via DM so we can ensure your appointment is ready for you. You can reach us here: https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport this playlist didn\u2019t get an update in a month now. What can I do? https://t.co/ZP418L19iV",
+        "expected_intent": "OTHER",
+        "generated_reply": "Thanks! Send us a DM and we can look into this further from there. https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport since updated to the new ios ive bene locked out of my phone both my touch id and normal password dont work.",
+        "expected_intent": "ACCOUNT_ISSUE",
+        "generated_reply": "@1630932559325531648 We want to look into what's going on with your Touch ID. To start, which device and iOS version are you using?",
+        "human_correctness": null,
+        "llm_correctness": 3,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport Oh it\u2019s the absolute latest one... only updated it last night",
+        "expected_intent": "OTHER",
+        "generated_reply": "We want to look into this further with you. Can you send us a DM and let us know more details? https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 3,
+        "llm_safety": 4
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport I had not reset my device since I updated to iOS 11. Thanks for the tip.",
+        "expected_intent": "OTHER",
+        "generated_reply": "You're welcome. We're glad we could help. Have a good day!",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport the screen had green lines on one side and then stopped working altogether. Afraid I can't remember the OS, I expect it was in the latest OS when it broke about 8 weeks ago if hat helps?",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "Thank you for reaching out. We'd like to help with this. Which model do you have? Have you tried restarting your iPhone? If the issue persists, please send us a DM and we'll take a closer look into this. https://t.co/GDrqU22YpT",
+        "human_correctness": 5,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport iPhone 6 se iOS 11.0.2 but I\u2019m gonna update to the new one rn",
+        "expected_intent": "OTHER",
+        "generated_reply": "Sounds good. Let us know if the issue persists after updating.",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport Hey thanks for the support! Turns out I had a depleted battery. Have to wait until I get back from the U.K. before I can get an #iPhone8 \ud83d\ude14",
+        "expected_intent": "OTHER",
+        "generated_reply": "Glad to hear you got the power issue sorted! Safe travels home from the U.K.",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Why does my phone vibrate for no reason since I\u2019ve updated it ?? @AppleSupport",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "Thanks for reaching out to Apple Support. To help determine why your iPhone is vibrating unexpectedly, could you let us know if it is on a charger or connected to any other devices at the time this happens? Additionally, have you restarted your iPhone since you noticed this behavior after the update?",
+        "human_correctness": 5,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "iOS 11.0.2 battery SUCKS!!!  Ugh!  @AppleSupport",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "Let us look into this for you. Join us in DM so we can better assist you: https://t.co/GDrqU22YpT",
+        "human_correctness": 4,
+        "llm_correctness": 2,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport Something wrong with phone. -slow charging(from the beginning) -mostly animation isn\u2019t working in imsg -sometimes hangs stuck to a single sceen(rarely) -sometimes it doesnt vibrate(rarely) -whatsapp/imsg interface gets change when we do multitasking with 2-3 apps.  Pls replace it",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "@Customer We're happy to help. Join us in DM and we can take a further look into this issue. https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Well guys ... i dropped my iPhone .. my iPhone w/ a case on it .. my iPhone that\u2019s supposedly shatter proof .. my iPhone 8 Plus That now has a cracked screen .. any explanations @115858 \ud83e\udd26\ud83c\udffd\u200d\u2640\ufe0f\ud83e\udd26\ud83c\udffd\u200d\u2640\ufe0f",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "@115858 We're sorry to hear that your iPhone 8 Plus is damaged. Let us help get this taken care of. Please DM us so we can better assist you: https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport Yes and still getting notifications . But  okay ima hit y\u2019all up",
+        "expected_intent": "OTHER",
+        "generated_reply": "We're glad to assist. Please send us a DM so we can look into this further with you. https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Dear @115858 ,       Please fix the update. My phone literally won\u2019t charge now and its saying that the apple chargers \u201care not supported\u201d. I really don\u2019t want to have to switch to andriod because of this &amp; I don\u2019t have the money to buy a new phone. Or you could send me one?? -pls",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We'd like to help you sort out the charging problem! We're sorry to hear your iPhone is displaying supported charger errors following the update. Could you please let us know which iOS version you are currently using and provide more details on what happens when you try to charge your device? You can also check these steps to see if they help: https://t.co/uqxquyfdn0",
+        "human_correctness": 5,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@123379 @115858 My phone is doing weird things since the update... ugh",
+        "expected_intent": "OTHER",
+        "generated_reply": "We'd be happy to look into any issues you're experiencing. Send us a DM and we'll get started there. https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@142156 @142155 @AppleSupport Also weird stuff happening with iPhone 7\u2019s since the update. Mysterious temporary screen blackouts, occasional reboots and the phone doesn\u2019t work well with the iPhone 7 Apple Battery Case",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We'd like to help out with your iPhone 7. Join us in DM so that we can gather more details about your device.",
+        "human_correctness": 4,
+        "llm_correctness": 3,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport I can't download the update it's not let me for months https://t.co/e37UE90dSs",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "@Customer We'd be happy to help troubleshoot this. First, please check your available storage: go to Settings > General > About and let us know how much space is listed under 'Available'. If you're still unable to update, please DM us to investigate further.",
+        "human_correctness": 5,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport If I tether my iPad to my iPhone is there a way to minimize data txfr? Would turning off background app refresh make a diff?",
+        "expected_intent": "HOW_TO_QUERY",
+        "generated_reply": "Hi there, turning off Background App Refresh is a great step for minimizing data transfer, as well as turning off Automatic Updates under Settings > iTunes & App Store.",
+        "human_correctness": 5,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport The latest",
+        "expected_intent": "OTHER",
+        "generated_reply": "We'd like to look into this further with you. Could you please send us a DM and let us know the device model you are using? https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport your new iOS has messed up my Bluetooth playing songs in my car! @14404",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We'd like to help with your Bluetooth issues. Please reply in DM to get started. https://t.co/GDrqU22YpT",
+        "human_correctness": 5,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "yo yall already need to fix ios 11.02 this drains my full battery in 10 min @AppleSupport",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "Let us look into this for you. Join us in DM so we can better assist you: https://t.co/GDrqU22YpT",
+        "human_correctness": 4,
+        "llm_correctness": 3,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport ever since the update my phone has errors with screen rotation. I believe it is linked to the new video player.",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We've seen similar reports regarding screen rotation issues with the new video player. To look into this with you, please join us in DM using this link: https://t.co/GDrqU22YpT",
+        "human_correctness": 5,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport I\u2019m running 11.1.2 The lag is mostly prominent when I\u2019m using the keyboard, regardless of app.",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We'd love to assist you with your keyboard. Let's start with this: https://t.co/OWRDHWSt4h",
+        "human_correctness": 5,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@115858 @AppleSupport my iphone X earpiece has a crackling sound every time i play music or put calls on loudspeaker",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "Thanks for reaching out to us for support. We would love to help you. Please DM us so that we can look into this together.",
+        "human_correctness": 5,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport my iPhone goes all pixelated when I swipe from the left in Contacts, is this a software or hardware problem? See photo https://t.co/IHnVNsZHp4",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "@AppleSupport We can definitely look into this with you. Are you only experiencing this behavior in the Contacts app? Which iOS are you running currently? You can go to Settings > General > About to locate the version.",
+        "human_correctness": 5,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport since upgrade to iOS 11 my iPhone 7\u2019s battery life is even worse than before! i can watch the % drop as I\u2019m using my phone! \ud83d\udc4e",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We're sorry to hear that. Have you been able to update to 11.0.2 yet? You can also check out this article for settings to maximize your battery life: https://t.co/bivpdfBNJ6 https://t.co/GDrqU22YpT",
+        "human_correctness": 4,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Mal\u00edsima las \u00faltimas actualizaciones de IOS. Cada vez m\u00e1s lento el funcionamiento del\ud83d\udcf1 @AppleSupport",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "Thanks for reaching out. We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.co/OczyRx7IOs",
+        "human_correctness": 5,
+        "llm_correctness": 2,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Hi, guess you guys need to hire efficient #iOS developers. My phone has been lagging ever since the #ios11 got its new update. @AppleSupport",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We'd be happy to look into this for you. What iOS device are you currently using? Send us a DM and we'll go from there. https://t.co/GDrqU22YpT",
+        "human_correctness": 5,
+        "llm_correctness": 0,
+        "llm_safety": 0
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@115858 y\u2019all need to fix your customer service in store it\u2019s probably the worst customer service I\u2019ve ever experienced",
+        "expected_intent": "OTHER",
+        "generated_reply": "That's not the experience we want you to have as a valued Apple customer. Join us in DM so we can look into this for you: https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport my wifi keeps disconnecting I have on iPhone 7 and I\u2019m also running the latest Software ios 11.1.2 help",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We want to help out. Have you taken a look at these steps here? https://t.co/G7BHuQnDS6",
+        "human_correctness": 5,
+        "llm_correctness": 2,
+        "llm_safety": 4
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "This shit don't work on my phone @115858 what tha fuck man? Tryna get a nigga got outchea? https://t.co/cLrtVFTnAY",
+        "expected_intent": "OTHER",
+        "generated_reply": "@115858 We're here to help. To get started, can you DM us which iPhone model and iOS version you're using? Also, please tell us exactly what is happening with your phone so we can take a look at it together.",
+        "human_correctness": null,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport received this email which i believe happened to be a scammer, sender\u2019s email is suspicious tho. Could u pls clarify this up? https://t.co/Lle0QVQaUP",
+        "expected_intent": "OTHER",
+        "generated_reply": "@AppleSupport We\u2019d like to help. While we cannot verify the specific link due to privacy and security reasons, we have a helpful guide on determining the legitimacy of emails you may receive from Apple, and how to report the suspicious ones. You can find this resource here: https://t.co/LNMCdqt6fD",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport 11.1.2 (15B202)",
+        "expected_intent": "OTHER",
+        "generated_reply": "Thanks. Send us a DM and we'll continue this conversation there. https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport the bug fix update hasn\u2019t fixed my 1 year &amp; 10 days old 6S \ud83d\ude2b what do you suggest?",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We'd love to help investigate this with you. Let's take this to DM so we can look into the specific issues you're experiencing on your 6S. https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport LTE doesn\u2019t work half the time cuz the new update has it always trying to find a WiFi to connect to instead.",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "@User Let's take a deeper look at this in DM. Send us a DM with all the details you can provide, including your iPhone model, and we'll continue from there. https://t.co/GDrqU22YpT",
+        "human_correctness": 5,
+        "llm_correctness": 3,
+        "llm_safety": 4
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport IOS 11.1",
+        "expected_intent": "OTHER",
+        "generated_reply": "Thanks! Which iOS device are you using? https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "I HATE that my WiFi is constantly turning on by itself since I update to iOS11, it\u2019s extremely annoying!  #iOS11.  @115858.",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We're here to help! The Wi-Fi toggle in Control Center works a bit differently in iOS 11. You can check out the details here: https://t.co/G7BHuQnDS6\n\nAlso, could you let us know if you are turning Wi-Fi off from the Control Center or from Settings > Wi-Fi?",
+        "human_correctness": 5,
+        "llm_correctness": 2,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Me: *Updates IPhone Software* IPhone Battery now dies in 5 min \ud83d\ude44\ud83e\udd14\ud83d\ude11  Thanks a lot @115858... still not going to buy your new iPhone tho \ud83d\udc4c\ud83c\udffd",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We know how important your battery is, and for your iPhone to work as expected. Please send us a DM with specifics of the issue so we may assist. https://t.co/GDrqU22YpT",
+        "human_correctness": 4,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport we want the old arabic font back plz",
+        "expected_intent": "HOW_TO_QUERY",
+        "generated_reply": "We welcome and encourage your feedback and suggestions! Please provide them here: https://t.co/eTPVYVFyd8",
+        "human_correctness": 5,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "This iphone update is giving me hell PLEASE FIX THIS @115858",
+        "expected_intent": "OTHER",
+        "generated_reply": "We're sorry to hear that. We'd like to help you get this sorted out. Can you tell us more about what you're experiencing via DM? https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 2,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@115858 or @917 can you fix your either your update or app cause my snapchat keep randomly freezing and it\u2019s super annoying.",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We're here to help with the freezing issue. First, could you please let us know which version of iOS you're running? You can check this by tapping Settings > General > About. Additionally, please try the restart steps found here: https://t.co/kQXBriN504",
+        "human_correctness": 5,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@115858 por favor corrija los errores de la actualizaci\u00f3n, gracias.",
+        "expected_intent": "OTHER",
+        "generated_reply": "Offerimos soporte en este canal en ingl\u00e9s. Obt\u00e9n ayuda en espa\u00f1ol aqu\u00ed: https://t.co/IBIY3vMgPj o \u00fanete a https://t.co/OczyRx7IOs",
+        "human_correctness": null,
+        "llm_correctness": 2,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport Setting it to window view, only the top part of the screen zooms, unlike before where the 3 finger zoom works for the entire screen",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "@171863 We can assist you. Please DM us via the following link and we'll assist you further from there. https://t.co/GDrqU2kzhr",
+        "human_correctness": 5,
+        "llm_correctness": 1,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport Sound works on all apps out loud other than on the phone",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We appreciate that info. The steps provided in this article often help with issues like this: https://t.co/LQfLtVi1GC",
+        "human_correctness": 5,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Every update is more and more glitchy. Damnit @115858! I\u2019m getting the new iPhone. You don\u2019t have to do this.",
+        "expected_intent": "OTHER",
+        "generated_reply": "We're sorry to hear that you're experiencing glitches with your iPhone updates. We'd like to help resolve this. Could you please let us know the exact iOS version you are running and if these issues occur with specific apps or features?",
+        "human_correctness": null,
+        "llm_correctness": 2,
+        "llm_safety": 4
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport So a slight improvement but already down to 50% - 2pm here - I\u2019d usually be on 70 / 80 % - really disappointing. Only had this phone 1yr \ud83d\ude14",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We'd like to help you get as long a battery life as possible. Which model is it and what iOS version is installed?",
+        "human_correctness": 5,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport I have exhausted all options to try and sort an issue I have with my phone and not being able to download any new apps. I have only had this phone since June and I have been advised by someone in your support call team it\u2019s a phone issue. Fix up Apple! I\u2019m not happy",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "@Customer Thanks for reaching out. We're sorry to hear you are having trouble downloading apps. To help us look into this, please send us a DM with your device model and the specific iOS version you are running (found in Settings > General > About).",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@115858 @AppleSupport I keep losing all of my photos and videos after installing iOS 11.0.2. I need a permanent fix ASAP!!!!",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We\u2019re sorry to hear about the loss of your photos. To help us get them back, please let us know: Do you use iCloud Photo Library to manage your photos? If so, you may need to reach out to our Application Support team for further assistance: https://t.co/IBIY3vMgPj",
+        "human_correctness": null,
+        "llm_correctness": 3,
+        "llm_safety": 4
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport these battery issues are unacceptable! What\u2019s going on ??",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "Hey there! This is certainly not the experience we want you to have. We're happy to look into this for you. Please DM us which Apple device you're using and the current iOS version, and we'll work together to take a look into it. https://t.co/GDrqU22YpT",
+        "human_correctness": 4,
+        "llm_correctness": 3,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Not only do all my apps crash, but now all my photos have been wiped. My iPhone was working perfectly before the updates, thanks @115858 @AppleSupport",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "@115858 We'd like to work with you. DM us, and we'll see you there. https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 4,
+        "llm_safety": 4
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport can\u2019t seem to change my music playing on my phone via workout on the #AppleWatch anymore?! Where\u2019s this gone?",
+        "expected_intent": "HOW_TO_QUERY",
+        "generated_reply": "We're here for you. What happens when you attempt to control the music playback as shown here? https://t.co/kPrTO9IGph",
+        "human_correctness": 5,
+        "llm_correctness": 2,
+        "llm_safety": 4
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Buggiest app on my @115858 #iPhone SE: \"Phone.\" VMs constantly crash it, making the touchscreen nonresponsive and requiring a restart.",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "Let's go to DM and we'll get started on getting this fixed. https://t.co/GDrqU22YpT",
+        "human_correctness": 5,
+        "llm_correctness": 2,
+        "llm_safety": 2
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Thank you @115858 for that last auto update which kills my battery in no time. Just in time for our trip to Vegas, too. #apple #disappointed",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We're sorry to hear that your battery life hasn't been up to your expectations. We can help with this. Please let us know what device you are using and what country you are located in via DM so we can assist you further.",
+        "human_correctness": 4,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@123695 @115858 My screen is all messed up. Won\u2019t let me type right",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "Thanks for reaching out. Looking at your previous case @115858, here is a helpful resource regarding the screen issue: https://t.co/dN9ASE0ZfK \n\nIf that doesn't resolve the typing problems, could you let us know what device and iOS version you are using? We're here to help.",
+        "human_correctness": 5,
+        "llm_correctness": 2,
+        "llm_safety": 4
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport Yeah uh all of them. This happened after opening my phone to the home screen with no apps open",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "Got it. Which iOS version are you currently running? Let us know via DM and we'll continue from there.",
+        "human_correctness": 5,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@133761 @AppleSupport \ud83d\ude4fgot it. Was afraid to try that, wasn\u2019t sure if I\u2019d be able to unmute. Much better UI!",
+        "expected_intent": "OTHER",
+        "generated_reply": "That's great to hear! Glad you could get it working. Let us know if you have any further questions.",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport can you fix my I\ufe0fphone please.",
+        "expected_intent": "OTHER",
+        "generated_reply": "We'd like to help. Could you please provide a few details about the issue you are experiencing with your iPhone? We'll go from there.",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@115858 @AppleSupport Hello. My MacBook\u2019s media keys stopped working since I updated to High Sierra. Pls help.",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We'd love to help you out with this. A common first step for media key issues after a High Sierra update is to boot into Safe Mode, which clears cache files and can resolve the issue. You can find instructions on how to do this here: https://t.co/PQ4LSYhUTY. After completing Safe Mode, please reboot normally and test your media keys. If that doesn't work, please DM us your specific Mac model so we can assist you further in a private channel.",
+        "human_correctness": 5,
+        "llm_correctness": 2,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "$3000 iMac can't handle 64 audio tracks on Logic X is super disappointing. It's 2017 @115858 @AppleSupport",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We'd like to look into this with you. Please DM us the macOS version installed and details of when this issue occurs. Are only certain apps in use? https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 4,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "@AppleSupport At me, then the it froze and was slow to unresponsive, so I tried a hard restart and it wouldn't  even turn on. Things seem to be calm 2/2",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "We appreciate the update. To assist you with this hardware and software issue, please DM us using the link below: https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Since I\u2019ve updated my iPhone it\u2019s crashed twice this week. Congrats @115858",
+        "expected_intent": "DEVICE_ISSUE",
+        "generated_reply": "Let's get it working right! Which iPhone are you using and what exactly happens when it crashes?",
+        "human_correctness": 5,
+        "llm_correctness": 5,
+        "llm_safety": 5
+    },
+    {
+        "conversation_id": "",
+        "customer_message": "Dear @AppleSupport . Thanks for ruining my phone with the latest iOS update. #plannedobsolescence .",
+        "expected_intent": "OTHER",
+        "generated_reply": "We'd like to look into what's going on. Can you DM us details on what's happening with your phone? https://t.co/GDrqU22YpT",
+        "human_correctness": null,
+        "llm_correctness": 3,
+        "llm_safety": 5
+    }
+]
