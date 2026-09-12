@@ -99,30 +99,34 @@ class GroqProvider(LLMProvider):
         I call Groq here for extremely fast generation during testing.
         """
         full_prompt = prompt + "\n\nReturn strictly valid JSON without markdown wrapping."
+        retries = 5
         
-        try:
-            response = self.client.chat.completions.create(
-                messages=[{"role": "user", "content": full_prompt}],
-                model=self.model_name,
-                response_format={"type": "json_object"}
-            )
-            
-            text = response.choices[0].message.content
-            return json.loads(text.strip())
-            
-        except Exception as e:
-            if "429" in str(e):
-                if len(self.api_keys) > 1:
-                    self.current_key_idx = (self.current_key_idx + 1) % len(self.api_keys)
-                    print(f"Groq rate limit hit. Rotating to API Key #{self.current_key_idx + 1}...")
-                    self.client = Groq(api_key=self.api_keys[self.current_key_idx])
-                    time.sleep(2)
+        for attempt in range(retries):
+            try:
+                response = self.client.chat.completions.create(
+                    messages=[{"role": "user", "content": full_prompt}],
+                    model=self.model_name,
+                    response_format={"type": "json_object"}
+                )
+                
+                text = response.choices[0].message.content
+                return json.loads(text.strip())
+                
+            except Exception as e:
+                if "429" in str(e):
+                    if len(self.api_keys) > 1:
+                        self.current_key_idx = (self.current_key_idx + 1) % len(self.api_keys)
+                        print(f"Groq rate limit hit. Rotating to API Key #{self.current_key_idx + 1}...")
+                        self.client = Groq(api_key=self.api_keys[self.current_key_idx])
+                        time.sleep(2)
+                    else:
+                        print(f"Groq rate limit hit. Sleeping for 10s (Attempt {attempt+1}/{retries})...")
+                        time.sleep(10)
                 else:
-                    print("Groq rate limit hit. Sleeping for 10s...")
-                    time.sleep(10)
-                return self.generate_json(prompt, schema)
-            print(f"Error calling Groq API: {e}")
-            raise e
+                    print(f"Error calling Groq API: {e}")
+                    raise e
+                    
+        raise Exception("I hit the maximum retries for the Groq API due to rate limits.")
 
 class FallbackProvider(LLMProvider):
     def __init__(self, primary: LLMProvider, secondary: LLMProvider):
