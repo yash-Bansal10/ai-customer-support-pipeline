@@ -50,13 +50,27 @@ def test_account_issue_escalation(mock_agent):
     assert response.intent == "ACCOUNT_ISSUE"
     assert "ACCOUNT_ISSUE to require human verification" in response.reason
 
+def test_billing_issue_escalation(mock_agent):
+    """Test that BILLING_ISSUE intents are escalated regardless of confidence."""
+    # Arrange
+    req = SupportRequest(message="I was charged twice")
+    mock_agent.llm.generate_json.return_value = {"intent": "BILLING_ISSUE", "confidence": 0.95}
+    
+    # Act
+    response = mock_agent.process_request(req)
+    
+    # Assert
+    assert response.decision == "ESCALATE"
+    assert response.intent == "BILLING_ISSUE"
+    assert "BILLING_ISSUE to require human verification" in response.reason
+
 def test_successful_auto_handle(mock_agent):
     """Test that safe intents with high confidence are auto-handled."""
     # Arrange
     req = SupportRequest(message="How do I restart my phone?")
     
     # Mock Intent Classification (High confidence, safe intent)
-    def generate_json_side_effect(prompt):
+    def generate_json_side_effect(prompt, schema=None):
         if "Classify" in prompt:
             return {"intent": "HOW_TO_QUERY", "confidence": 0.9}
         elif "You are an AI customer support agent" in prompt:
@@ -71,3 +85,21 @@ def test_successful_auto_handle(mock_agent):
     # Assert
     assert response.decision == "AUTO"
     assert response.reply == "Hold the power button."
+
+def test_insufficient_evidence_escalation(mock_agent):
+    """Test that the agent escalates when the generation step flags needs_human=True."""
+    req = SupportRequest(message="How do I restart my phone?")
+    
+    def generate_json_side_effect(prompt, schema=None):
+        if "Classify" in prompt:
+            return {"intent": "HOW_TO_QUERY", "confidence": 0.9}
+        elif "You are an AI customer support agent" in prompt:
+            return {"needs_human": True, "reason_for_decision": "Evidence is irrelevant", "reply": ""}
+        return {}
+        
+    mock_agent.llm.generate_json.side_effect = generate_json_side_effect
+    
+    response = mock_agent.process_request(req)
+    
+    assert response.decision == "ESCALATE"
+    assert response.reason == "Evidence is irrelevant"

@@ -3,6 +3,7 @@ import time
 from typing import Dict, Any, Optional
 import json
 from dotenv import load_dotenv
+from pydantic import ValidationError
 
 # Using google-genai package
 from google import genai
@@ -58,7 +59,10 @@ class GeminiProvider(LLMProvider):
                 if text.endswith("```"):
                     text = text[:-3]
                     
-                return json.loads(text.strip())
+                parsed_dict = json.loads(text.strip())
+                if schema:
+                    parsed_dict = schema.model_validate(parsed_dict).model_dump()
+                return parsed_dict
                 
             except Exception as e:
                 # If I hit a rate limit (429) or suspension (403), I catch it and handle it gracefully
@@ -74,6 +78,9 @@ class GeminiProvider(LLMProvider):
                         wait_time = 65 # Wait 65 seconds to absolutely guarantee the per-minute quota resets
                         print(f"Rate limit hit. I am sleeping for {wait_time}s before retrying (Attempt {attempt+1}/{retries})...")
                         time.sleep(wait_time)
+                elif isinstance(e, (json.JSONDecodeError, ValidationError)):
+                    print(f"Schema validation failed (Attempt {attempt+1}/{retries}): {e}")
+                    time.sleep(1)
                 else:
                     print(f"Error calling Gemini API: {e}")
                     raise e
@@ -110,7 +117,10 @@ class GroqProvider(LLMProvider):
                 )
                 
                 text = response.choices[0].message.content
-                return json.loads(text.strip())
+                parsed_dict = json.loads(text.strip())
+                if schema:
+                    parsed_dict = schema.model_validate(parsed_dict).model_dump()
+                return parsed_dict
                 
             except Exception as e:
                 if "429" in str(e):
@@ -122,6 +132,9 @@ class GroqProvider(LLMProvider):
                     else:
                         print(f"Groq rate limit hit. Sleeping for 10s (Attempt {attempt+1}/{retries})...")
                         time.sleep(10)
+                elif isinstance(e, (json.JSONDecodeError, ValidationError)):
+                    print(f"Schema validation failed (Attempt {attempt+1}/{retries}): {e}")
+                    time.sleep(1)
                 else:
                     print(f"Error calling Groq API: {e}")
                     raise e

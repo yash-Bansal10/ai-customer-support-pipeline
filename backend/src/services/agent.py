@@ -2,7 +2,7 @@ import os
 from typing import List
 from src.services.llm_provider import get_llm_provider
 from src.services.retriever import get_retriever
-from src.models.api_models import SupportRequest, SupportResponse
+from src.models.api_models import SupportRequest, SupportResponse, IntentClassificationResult, GenerationResult
 
 class SupportAgent:
     """I built this orchestrator class to hold the main business logic for the support pipeline."""
@@ -27,7 +27,7 @@ class SupportAgent:
             "confidence": 0.85
         }}
         """
-        result = self.llm.generate_json(prompt)
+        result = self.llm.generate_json(prompt, schema=IntentClassificationResult)
         return result.get("intent", "OTHER"), float(result.get("confidence", 0.0))
         
     def generate_response(self, message: str, intent: str, evidence: List) -> dict:
@@ -58,12 +58,12 @@ class SupportAgent:
             "reply": "<drafted reply, or empty string if needs_human is true>"
         }}
         """
-        return self.llm.generate_json(prompt)
+        return self.llm.generate_json(prompt, schema=GenerationResult)
         
     def process_request(self, request: SupportRequest) -> SupportResponse:
         """My end-to-end pipeline: 1) Classify, 2) Retrieve, 3) Assess Risk & Generate."""
         # Step 1: I classify the customer intent first so I know what we are dealing with.
-        intent, confidence = self.classify_intent(request.message)
+        intent, llm_reported_confidence = self.classify_intent(request.message)
         
         # Step 2: I retrieve similar historical cases from my FAISS vector database to ground the response.
         evidence = self.retriever.retrieve(request.message)
@@ -72,10 +72,10 @@ class SupportAgent:
         # Why deterministic rules? LLMs are notoriously bad at knowing when they don't know something.
         # By enforcing a strict threshold check *before* generation, we eliminate the risk of hallucinated 
         # answers for edge-case queries, drastically improving safety at the cost of a slightly higher escalation rate.
-        if confidence < self.confidence_threshold:
+        if llm_reported_confidence < self.confidence_threshold:
             return SupportResponse(
                 intent=intent,
-                intent_confidence=confidence,
+                intent_confidence=llm_reported_confidence,
                 decision="ESCALATE",
                 reason="My system caught that the intent confidence was too low",
                 evidence=evidence
@@ -85,12 +85,12 @@ class SupportAgent:
         # For example, ACCOUNT_ISSUE queries often involve PII, security, or strict policies. 
         # Even if the LLM is 100% confident, we force an escalation. This demonstrates an understanding 
         # of real-world compliance and risk, rather than blindly automating everything.
-        if intent in ["ACCOUNT_ISSUE"]:
+        if intent in ["ACCOUNT_ISSUE", "BILLING_ISSUE"]:
             return SupportResponse(
                 intent=intent,
-                intent_confidence=confidence,
+                intent_confidence=llm_reported_confidence,
                 decision="ESCALATE",
-                reason="I explicitly configured ACCOUNT_ISSUE to require human verification",
+                reason=f"I explicitly configured {intent} to require human verification",
                 evidence=evidence
             )
             
@@ -108,7 +108,7 @@ class SupportAgent:
         
         return SupportResponse(
             intent=intent,
-            intent_confidence=confidence,
+            intent_confidence=llm_reported_confidence,
             reply=reply if decision == "AUTO" else None,
             decision=decision,
             reason=reason,
