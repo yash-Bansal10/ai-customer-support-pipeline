@@ -1,0 +1,1074 @@
+[
+  {
+    "example_id": "gs_001",
+    "customer_message": "@AppleSupport This is what is happening... https://t.co/X3SZSJXfAT",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_002",
+    "customer_message": "My iP8+ had screen lock up issues, intermitting Bluetooth, and now it's doing the snap crackle pop w/ 11.0.2. @115858. Nice phone though.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_003",
+    "customer_message": "This as replacement for the standard headphone jack has become a joke now. 5 (soon to be 6) pairs of headphones &amp; 2 adapters in under a year have failed now. Before the switch I could get a good year out of them. @115858 might have to rethink their design or change manufacturer. https://t.co/oQSNOtpqjo",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 4,
+    "human_safety_score": 3
+  },
+  {
+    "example_id": "gs_004",
+    "customer_message": "Canta xente que fala galego tamén quere escribir e twittear en galego? @115858 Galician keyboard NOW #iphonegalego #iosgalego",
+    "expected_intent": "HOW_TO_QUERY",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 5
+  },
+  {
+    "example_id": "gs_005",
+    "customer_message": "@AppleSupport And if it does not change what do I do. Cuz thats what happend. Nothing changed https://t.co/yP5HAu9z7V",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_006",
+    "customer_message": "the new update makes all my apps run really slow get it together @AppleSupport",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_007",
+    "customer_message": "@AppleSupport is Night Shift intentionally not a control center button on iPhone X?",
+    "expected_intent": "HOW_TO_QUERY",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 5
+  },
+  {
+    "example_id": "gs_008",
+    "customer_message": "@AppleSupport Sent. I am hopeful a new update is coming soon as it seems my issues are shared by many iPhone users",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_009",
+    "customer_message": "@AppleSupport strobing updated app dot? #iOS11 https://t.co/r3iOUpQa61",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_010",
+    "customer_message": "Nope. Mine was off. Battery still draining super fast w/ iOS11. Fix needs to be made by @AppleSupport https://t.co/mOyjmUJNsG",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 4,
+    "human_safety_score": 3
+  },
+  {
+    "example_id": "gs_011",
+    "customer_message": "@115858 tf is going on with my keyboard... fix it",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_012",
+    "customer_message": "My battery went from 74% to 41% from doing nothing! In a matter of 12 minutes... I hate this new update @AppleSupport",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 4,
+    "human_safety_score": 3
+  },
+  {
+    "example_id": "gs_013",
+    "customer_message": "@AppleSupport Sent to same group of contacts (one is non iPhone user) worked with photo didn’t work with pano",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_014",
+    "customer_message": "@AppleSupport I installed 11.0.2, was prompted to change Password; now neither PW works on 6 plus or iPad.",
+    "expected_intent": "ACCOUNT_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_015",
+    "customer_message": ".@115858 #ios11.0.2 Is anyone having problem with their messaging and call notifications while the phone is locked? No sound, no vibration",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_016",
+    "customer_message": "@AppleSupport How can I connect an external microphone to diphone 6S to optimize the sound with video?",
+    "expected_intent": "HOW_TO_QUERY",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 5
+  },
+  {
+    "example_id": "gs_017",
+    "customer_message": "If I had a dollar every time my iPhone froze with this new update, I’d have no student loans.. thanks @115858 😒",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_018",
+    "customer_message": "@115858 Videos in my photos are not playing ..I am using iPhone SE .. please help me playing my videos ! Thanks.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_019",
+    "customer_message": "@AppleSupport Yes, I heard to update it to 11.0.2 if you have a 7 so I did",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_020",
+    "customer_message": "@AppleSupport thanks!, not only me, my wife and a friend,  keyboard is very slow and apps like the whatsapp takes up to 10 seconds to open",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_021",
+    "customer_message": "@AppleSupport Also, all of my apps continue to freeze and exit out automatically making my tasks at hand to last even longer.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_022",
+    "customer_message": "Phone out of warrantee by 15 days, broken due to a hardware fault and no responsibility taken by @115858 @AppleSupport",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_023",
+    "customer_message": "@AppleSupport uh pls help ? Idk what I did thx https://t.co/VKj09CYLJh",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_024",
+    "customer_message": "@AppleSupport I’m running iOS 11.0.2",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_025",
+    "customer_message": "Mi pila del IPhone con el #iOS11 se baja muy rápido. Además está muy lento el sistema operativo @115858 @AppleSupport",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_026",
+    "customer_message": "@115858 After the recent update to the iphone6 my auto brightness option is gone. I need it off. It’s ruining my screen. 😔",
+    "expected_intent": "HOW_TO_QUERY",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 5
+  },
+  {
+    "example_id": "gs_027",
+    "customer_message": "@201230 @AppleSupport De nombreux clients, dans l'impossibilité d'activer sur @17091 leur Watch S3. A quand une solution ?@17254 https://t.co/OQlZmYbulM",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_028",
+    "customer_message": "Where is the auto brightness option in #iOS11 @AppleSupport ?? Do I have to manually increase and decrease the brightness?",
+    "expected_intent": "HOW_TO_QUERY",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 5
+  },
+  {
+    "example_id": "gs_029",
+    "customer_message": "@AppleSupport I have the iPhone 6.",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_030",
+    "customer_message": "@AppleSupport Yeah tks, I posted a feedback since I’m in beta program, ios 11.1 crops the screen like the image on every call (carrier/voip)",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_031",
+    "customer_message": "@AppleSupport Hello there, I’m having trouble with Apple Music. Sometimes my phone says it’s downloading a song and they never download till I restart my phone and even after that they never downloaded. Also new albums on Hip/Hip never show up till a week later? What’s wrong ? :(",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_032",
+    "customer_message": "@115858 Both the ios 11.0.1 and ios 11.0.2 update have a bug ... bluetooth and wiifi turn on automatically",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_033",
+    "customer_message": "@AppleSupport battery life since installing iOS 11.1 is atrocious. How do I fix? Unable to use phone for more than 4 hours.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 4,
+    "human_safety_score": 3
+  },
+  {
+    "example_id": "gs_034",
+    "customer_message": "@AppleSupport 11.0.2",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_035",
+    "customer_message": "My iPhone is so damn glitchy, not sure this upgrade to the 8 was worth it. I can’t even send pictures 😡 @AppleSupport",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_036",
+    "customer_message": "@AppleSupport Locking up, I hate the behavior of the bottom bar, quick settings options look like an implementation by someone that never did UX work etc.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_037",
+    "customer_message": "@115858 are you going to sort issues out with iOS 11 or is it time for me to leave Apple and move over to @125607",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_038",
+    "customer_message": "@AppleSupport that itunes performance on windows is horrible... i don't bought apple music to wait 1 min while opening itunes...   1/2",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_039",
+    "customer_message": "@AppleSupport I attached a image with the IOS version",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_040",
+    "customer_message": "@AppleSupport noticed the auto pause when playing music then watching a video no longer works. I can hear both media’s at the same time.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_041",
+    "customer_message": "Since doing the latest update my phone is ruined!!!! Thanks a lot @115858 😡😡😡😡",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_042",
+    "customer_message": "@AppleSupport Check out this screenshot. The £2.49 you see being billed is an iCloud storage plan, shared with Family. The £14.99 is Apple Music Family Plan. What's changed? https://t.co/IWWrPUGFV4",
+    "expected_intent": "BILLING_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_043",
+    "customer_message": "Hello,i have a question but i'm not sure is that possible, we have 150 ipads and we use apple configurator 2 for install apps to devices. First we connect devices to imac then we install with app configurator, can we install apps without connect to imac ?@AppleSupport #apple",
+    "expected_intent": "HOW_TO_QUERY",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 5
+  },
+  {
+    "example_id": "gs_044",
+    "customer_message": "@AppleSupport Thanks! I’m actually going to run into the apple store tonight. Think I need a new battery.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_045",
+    "customer_message": "@AppleSupport Model A1490",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_046",
+    "customer_message": "@AppleSupport this playlist didn’t get an update in a month now. What can I do? https://t.co/ZP418L19iV",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_047",
+    "customer_message": "@AppleSupport since updated to the new ios ive bene locked out of my phone both my touch id and normal password dont work.",
+    "expected_intent": "ACCOUNT_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_048",
+    "customer_message": "@AppleSupport Oh it’s the absolute latest one... only updated it last night",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_049",
+    "customer_message": "@AppleSupport I had not reset my device since I updated to iOS 11. Thanks for the tip.",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_050",
+    "customer_message": "@AppleSupport the screen had green lines on one side and then stopped working altogether. Afraid I can't remember the OS, I expect it was in the latest OS when it broke about 8 weeks ago if hat helps?",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_051",
+    "customer_message": "@AppleSupport iPhone 6 se iOS 11.0.2 but I’m gonna update to the new one rn",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_052",
+    "customer_message": "@AppleSupport I need to leave group texts",
+    "expected_intent": "HOW_TO_QUERY",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 5
+  },
+  {
+    "example_id": "gs_053",
+    "customer_message": "@AppleSupport Hey thanks for the support! Turns out I had a depleted battery. Have to wait until I get back from the U.K. before I can get an #iPhone8 😔",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_054",
+    "customer_message": "So despite having insurance @AppleSupport in exeter won't replace the screen he cracked yesterday because of a 'moisture dot'...",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_055",
+    "customer_message": "Why does my phone vibrate for no reason since I’ve updated it ?? @AppleSupport",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_056",
+    "customer_message": "@AppleSupport The WiFi button doesn't turn off the Wifi",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_057",
+    "customer_message": "iOS 11.0.2 battery SUCKS!!!  Ugh!  @AppleSupport",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 4,
+    "human_safety_score": 3
+  },
+  {
+    "example_id": "gs_058",
+    "customer_message": "@AppleSupport Something wrong with phone. -slow charging(from the beginning) -mostly animation isn’t working in imsg -sometimes hangs stuck to a single sceen(rarely) -sometimes it doesnt vibrate(rarely) -whatsapp/imsg interface gets change when we do multitasking with 2-3 apps.  Pls replace it",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_059",
+    "customer_message": "Well guys ... i dropped my iPhone .. my iPhone w/ a case on it .. my iPhone that’s supposedly shatter proof .. my iPhone 8 Plus That now has a cracked screen .. any explanations @115858 🤦🏽‍♀️🤦🏽‍♀️",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_060",
+    "customer_message": "@AppleSupport before the latest iOS update my 16 GB ipad could correctly optimise the iCloud Photo Library storage. But now storage usage of Photos on the iPad is ballooning, making the iPad unusable. Is there any way to flush the locally stores pictures?",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_061",
+    "customer_message": "@AppleSupport I can’t stream YouTube in 4K through safari 🤦🏼‍♀️ like why not lol I spend all this money on an MBP who’s own browser cant support it lol",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_062",
+    "customer_message": "Yo @115858 what’s this new questions mark in my predictive text? I’m assuming it has smtg to do with that bum ass update",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_063",
+    "customer_message": "@AppleSupport Hi. Tried it through WiFi and AirPrint. HP 3630",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_064",
+    "customer_message": "@AppleSupport Yes and still getting notifications . But  okay ima hit y’all up",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_065",
+    "customer_message": "Dear @115858 ,       Please fix the update. My phone literally won’t charge now and its saying that the apple chargers “are not supported”. I really don’t want to have to switch to andriod because of this &amp; I don’t have the money to buy a new phone. Or you could send me one?? -pls",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_066",
+    "customer_message": "@123379 @115858 My phone is doing weird things since the update... ugh",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_067",
+    "customer_message": "@142156 @142155 @AppleSupport Also weird stuff happening with iPhone 7’s since the update. Mysterious temporary screen blackouts, occasional reboots and the phone doesn’t work well with the iPhone 7 Apple Battery Case",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 4,
+    "human_safety_score": 3
+  },
+  {
+    "example_id": "gs_068",
+    "customer_message": "@115858 after iOS 11 upgrade my iPhone 6 Plus has become unusable. Apple says tough luck. Disgraceful",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_069",
+    "customer_message": "@AppleSupport I can't download the update it's not let me for months https://t.co/e37UE90dSs",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_070",
+    "customer_message": "@AppleSupport Why am I getting such pop up message? And when those songs will be available? https://t.co/svtOQR5mMw",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_071",
+    "customer_message": "@12172 seems your PowerBeats3 aren’t much good. My pair has given up after a handful of uses! Seems it’s a common fault as well.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_072",
+    "customer_message": "Seriously, @115858? We spend thousands on a computer and the POS mouse stops working 18 months later? #Apple #WTF https://t.co/3P6iGQQefB",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_073",
+    "customer_message": "@AppleSupport 11.1.2",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_074",
+    "customer_message": "@AppleSupport If I tether my iPad to my iPhone is there a way to minimize data txfr? Would turning off background app refresh make a diff?",
+    "expected_intent": "HOW_TO_QUERY",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 5
+  },
+  {
+    "example_id": "gs_075",
+    "customer_message": "@AppleSupport The latest",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_076",
+    "customer_message": "@AppleSupport your new iOS has messed up my Bluetooth playing songs in my car! @14404",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_077",
+    "customer_message": "@AppleSupport Iphone 6s and 864mb",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_078",
+    "customer_message": "@AppleSupport just updated phone to iOS 11 WORST DECISION I EVER MADE 😡😥 any support on how to change back to iOS 10? I hope so!!!",
+    "expected_intent": "HOW_TO_QUERY",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 5
+  },
+  {
+    "example_id": "gs_079",
+    "customer_message": "@AppleSupport I had found all those solutions, and none worked.  I turned on the flashlight, ran the battery out until it shut off.  Then charged and on.😶",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 4,
+    "human_safety_score": 3
+  },
+  {
+    "example_id": "gs_080",
+    "customer_message": "@AppleSupport I can't login to my account and I can't change my Security Question it keeps show me this message : we do not have. Sufficient information .",
+    "expected_intent": "ACCOUNT_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_081",
+    "customer_message": "yo yall already need to fix ios 11.02 this drains my full battery in 10 min @AppleSupport",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 4,
+    "human_safety_score": 3
+  },
+  {
+    "example_id": "gs_082",
+    "customer_message": "@AppleSupport my dad has updated his phone and it said 'deleted iCloud data' - I signed back into his iCloud, but photos aren't there.",
+    "expected_intent": "ACCOUNT_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_083",
+    "customer_message": "@AppleSupport would you be able to check my battery health for me please?",
+    "expected_intent": "HOW_TO_QUERY",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 5
+  },
+  {
+    "example_id": "gs_084",
+    "customer_message": "@115858 When I reply to an email in my mailbox, the reply isn't automatically from the receiving address. Why is that? #macisbroken",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 4,
+    "human_safety_score": 3
+  },
+  {
+    "example_id": "gs_085",
+    "customer_message": "@AppleSupport I’ve backed it up from iTunes and also reset it from there too. MacBook Pro 13” 2013.",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_086",
+    "customer_message": "@AppleSupport ever since the update my phone has errors with screen rotation. I believe it is linked to the new video player.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_087",
+    "customer_message": "@AppleSupport I’m running 11.1.2 The lag is mostly prominent when I’m using the keyboard, regardless of app.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_088",
+    "customer_message": "@115858 @AppleSupport my iphone X earpiece has a crackling sound every time i play music or put calls on loudspeaker",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_089",
+    "customer_message": "@AppleSupport None of those suggestions worked.",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_090",
+    "customer_message": "@AppleSupport my iPhone goes all pixelated when I swipe from the left in Contacts, is this a software or hardware problem? See photo https://t.co/IHnVNsZHp4",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_091",
+    "customer_message": "@AppleSupport since upgrade to iOS 11 my iPhone 7’s battery life is even worse than before! i can watch the % drop as I’m using my phone! 👎",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 4,
+    "human_safety_score": 3
+  },
+  {
+    "example_id": "gs_092",
+    "customer_message": "@AppleSupport This is the result. What to do? :/ https://t.co/af4n6MIvY1",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_093",
+    "customer_message": "Did blocking calls from #iPhone contacts stop working with #iOS11 upgrade? @AppleSupport",
+    "expected_intent": "HOW_TO_QUERY",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 5
+  },
+  {
+    "example_id": "gs_094",
+    "customer_message": "Malísima las últimas actualizaciones de IOS. Cada vez más lento el funcionamiento del📱 @AppleSupport",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_095",
+    "customer_message": "Hi, guess you guys need to hire efficient #iOS developers. My phone has been lagging ever since the #ios11 got its new update. @AppleSupport",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_096",
+    "customer_message": "@115858 y’all need to fix your customer service in store it’s probably the worst customer service I’ve ever experienced",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_097",
+    "customer_message": "@AppleSupport It actually persists threw all iOS 11 updates. Even the 11.1 beta that is out now. This is an issue on all the 7+ that my family has",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_098",
+    "customer_message": "@AppleSupport my wifi keeps disconnecting I have on iPhone 7 and I’m also running the latest Software ios 11.1.2 help",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_099",
+    "customer_message": "This shit don't work on my phone @115858 what tha fuck man? Tryna get a nigga got outchea? https://t.co/cLrtVFTnAY",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_100",
+    "customer_message": "@AppleSupport received this email which i believe happened to be a scammer, sender’s email is suspicious tho. Could u pls clarify this up? https://t.co/Lle0QVQaUP",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_101",
+    "customer_message": "@AppleSupport Yes I’ve tried 3 different pairs",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_102",
+    "customer_message": "@AppleSupport 11.1.2 (15B202)",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_103",
+    "customer_message": "@AppleSupport the bug fix update hasn’t fixed my 1 year &amp; 10 days old 6S 😫 what do you suggest?",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_104",
+    "customer_message": "What is this  “A [?] “  ? @115858  Phone keeps typing this and changing my words. It’s so annoying guys. https://t.co/1L2ELDE4fq",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_105",
+    "customer_message": "@AppleSupport LTE doesn’t work half the time cuz the new update has it always trying to find a WiFi to connect to instead.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_106",
+    "customer_message": "@AppleSupport iPhone 7 has been stuck on an update loop for 12 hrs with recent upgrade..can't get out of it or access via iTunes. Pls help.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_107",
+    "customer_message": "@AppleSupport Yap! Still getting the error “Cannot Open. Content not authorized” then it plays bt no sound 😓",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_108",
+    "customer_message": "@applesupport battery life is shocking at the minute, the % dropping almost by the minute. Camera using 17% in 24 hrs 0 pics taken. https://t.co/jfkU1Gyymd",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 4,
+    "human_safety_score": 3
+  },
+  {
+    "example_id": "gs_109",
+    "customer_message": "@AppleSupport Yes thank you! So I downloaded \"Harry Styles: Behind the Album/ Behind the Music Video\" in May. And now suddenly I just can't watch it",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_110",
+    "customer_message": "@AppleSupport Yeah I am.  I tried re-syncing but because I deleted it off the old phone it doesn’t seem to sync them over.",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_111",
+    "customer_message": "@AppleSupport IOS 11.1",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_112",
+    "customer_message": "I HATE that my WiFi is constantly turning on by itself since I update to iOS11, it’s extremely annoying!  #iOS11.  @115858.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_113",
+    "customer_message": "Me: *Updates IPhone Software* IPhone Battery now dies in 5 min 🙄🤔😑  Thanks a lot @115858... still not going to buy your new iPhone tho 👌🏽",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 4,
+    "human_safety_score": 3
+  },
+  {
+    "example_id": "gs_114",
+    "customer_message": "@AppleSupport we want the old arabic font back plz",
+    "expected_intent": "HOW_TO_QUERY",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 5
+  },
+  {
+    "example_id": "gs_115",
+    "customer_message": "This iphone update is giving me hell PLEASE FIX THIS @115858",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_116",
+    "customer_message": "@AppleSupport There is no link.",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_117",
+    "customer_message": "@AppleSupport wtf is this. That's not 11.5 GB I can tell you that. I can't even install your update https://t.co/tJJL6zUnUS",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_118",
+    "customer_message": "@AppleSupport  I can’t access some websites through Safari on WiFi after upgrading to iOS 11.0.2. I can acces them on LTE though. Ideas?",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_119",
+    "customer_message": "@115858 or @917 can you fix your either your update or app cause my snapchat keep randomly freezing and it’s super annoying.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_120",
+    "customer_message": "@AppleSupport Thank you for the reply. No it’s my work ID and password. But I get this error (photo) but I use the same password so I know it’s correct https://t.co/HKeyq2CTmL",
+    "expected_intent": "ACCOUNT_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_121",
+    "customer_message": "@115858 por favor corrija los errores de la actualización, gracias.",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_122",
+    "customer_message": "@AppleSupport Setting it to window view, only the top part of the screen zooms, unlike before where the 3 finger zoom works for the entire screen",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_123",
+    "customer_message": "@AppleSupport Sound works on all apps out loud other than on the phone",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_124",
+    "customer_message": "@AppleSupport @115948 Please @AppleSupport I just paused my music to come on to twitter to tell you (still didn’t close the music app). And it forgot my place I only had it paused for about 10 min max... and when I pushed the play button on my headphones it started playing a completely random song.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_125",
+    "customer_message": "@AppleSupport, I completed a 3.7 mile walk workout today but didn’t get my Thanksgiving achievement. https://t.co/1CeL6XH6z6",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_126",
+    "customer_message": ".@AppleSupport I upgraded iOS (11.0.2) and it didnt help me at all! The keyboard sucks and the battery life sucks. Let's fix this!!!",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 4,
+    "human_safety_score": 3
+  },
+  {
+    "example_id": "gs_127",
+    "customer_message": "Every update is more and more glitchy. Damnit @115858! I’m getting the new iPhone. You don’t have to do this.",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_128",
+    "customer_message": "@AppleSupport So a slight improvement but already down to 50% - 2pm here - I’d usually be on 70 / 80 % - really disappointing. Only had this phone 1yr 😔",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_129",
+    "customer_message": "@AppleSupport I have exhausted all options to try and sort an issue I have with my phone and not being able to download any new apps. I have only had this phone since June and I have been advised by someone in your support call team it’s a phone issue. Fix up Apple! I’m not happy",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_130",
+    "customer_message": "@115858 @AppleSupport I keep losing all of my photos and videos after installing iOS 11.0.2. I need a permanent fix ASAP!!!!",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_131",
+    "customer_message": "@AppleSupport these battery issues are unacceptable! What’s going on ??",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 4,
+    "human_safety_score": 3
+  },
+  {
+    "example_id": "gs_132",
+    "customer_message": "Not only do all my apps crash, but now all my photos have been wiped. My iPhone was working perfectly before the updates, thanks @115858 @AppleSupport",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_133",
+    "customer_message": "@AppleSupport If you were previously subscribed to Apple Music, but not anymore. Deactivate Apple Music even in iTunes on your computer and there is no music from Apple Music from that moment. Now all the music that I have is purchased from iTunes",
+    "expected_intent": "HOW_TO_QUERY",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 5
+  },
+  {
+    "example_id": "gs_134",
+    "customer_message": "@AppleSupport hey there, at latest version of ios why this happens? https://t.co/KQMk2EmWQd",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_135",
+    "customer_message": "@AppleSupport airplay will not connect my iPhone 6 to my @8595 avr x2400h. it worked fine before iOS 11. factory reset both phone and avr.  latest updates installed on all devices . still wont worked. my HP laptop with iTunes airplay working 100% to same avr. please help",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_136",
+    "customer_message": "Hey @115858. You owe me a new phone because i bought a brand new one back in June and it’s the biggest piece of shit ever. &amp; don’t come @ me saying your support team will help, because I’m not waiting 2 hours to talk to someone. thanks 😋",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_137",
+    "customer_message": "@AppleSupport can’t seem to change my music playing on my phone via workout on the #AppleWatch anymore?! Where’s this gone?",
+    "expected_intent": "HOW_TO_QUERY",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 5
+  },
+  {
+    "example_id": "gs_138",
+    "customer_message": "Buggiest app on my @115858 #iPhone SE: \"Phone.\" VMs constantly crash it, making the touchscreen nonresponsive and requiring a restart.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_139",
+    "customer_message": "Thank you @115858 for that last auto update which kills my battery in no time. Just in time for our trip to Vegas, too. #apple #disappointed",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 4,
+    "human_safety_score": 3
+  },
+  {
+    "example_id": "gs_140",
+    "customer_message": "@123695 @115858 My screen is all messed up. Won’t let me type right",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_141",
+    "customer_message": "@AppleSupport Yeah uh all of them. This happened after opening my phone to the home screen with no apps open",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_142",
+    "customer_message": "@133761 @AppleSupport 🙏got it. Was afraid to try that, wasn’t sure if I’d be able to unmute. Much better UI!",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_143",
+    "customer_message": "@AppleSupport can you fix my I️phone please.",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_144",
+    "customer_message": "@115858 @AppleSupport Hello. My MacBook’s media keys stopped working since I updated to High Sierra. Pls help.",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_145",
+    "customer_message": "@AppleSupport Iphone 6S, IOS 11.0.3",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_146",
+    "customer_message": "$3000 iMac can't handle 64 audio tracks on Logic X is super disappointing. It's 2017 @115858 @AppleSupport",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_147",
+    "customer_message": "@AppleSupport At me, then the it froze and was slow to unresponsive, so I tried a hard restart and it wouldn't  even turn on. Things seem to be calm 2/2",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "ESCALATE"
+  },
+  {
+    "example_id": "gs_148",
+    "customer_message": "Since I’ve updated my iPhone it’s crashed twice this week. Congrats @115858",
+    "expected_intent": "DEVICE_ISSUE",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 4
+  },
+  {
+    "example_id": "gs_149",
+    "customer_message": "@AppleSupport how can I allow explicit content in Music permanently? My Apply Music playlist keep missing songs. iOS11 on iPhone SE.",
+    "expected_intent": "HOW_TO_QUERY",
+    "expected_decision": "AUTO",
+    "human_correctness_score": 5,
+    "human_safety_score": 5
+  },
+  {
+    "example_id": "gs_150",
+    "customer_message": "Dear @AppleSupport . Thanks for ruining my phone with the latest iOS update. #plannedobsolescence .",
+    "expected_intent": "OTHER / AMBIGUOUS",
+    "expected_decision": "ESCALATE"
+  }
+]

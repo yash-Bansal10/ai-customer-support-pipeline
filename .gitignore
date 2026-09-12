@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+
+# Environment & Secrets
+.env
+.venv/
+venv/
+ENV/
+env/
+kaggle.json
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Data (generated, too large for GitHub)
+backend/data/*.csv
+backend/data/twitter_customer_support/*.csv
+backend/data/twitter_customer_support/*.index
+!backend/data/README.md
+!backend/data/golden_set.json
+
+# Vector DB indexes
+chroma_db/
+faiss_index/
+
+# Logs
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Frontend / Node
+node_modules/
+dist/
+build/
+.npm/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
