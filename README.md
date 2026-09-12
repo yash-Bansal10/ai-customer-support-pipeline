@@ -135,14 +135,15 @@ python -m venv venv
 *(Activate venv: `source venv/bin/activate` on Mac/Linux or `.\venv\Scripts\activate` on Windows)*
 ```bash
 pip install -r requirements.txt
-cd ..
 ```
 
 ### Step 2: Configure API Keys
 ```bash
 cp .env.example .env
 ```
-Edit `.env` to include your LLM API keys. The system uses a Fallback strategy, so you can provide multiple comma-separated keys for `GEMINI_API_KEY` and `GROQ_API_KEY`. (Note: You do not need Kaggle credentials — I pre-processed the 800MB raw dataset into a lightweight 4MB JSON file included in this repo to save you time!)
+Edit `.env` to include your LLM API keys. The system uses a Fallback strategy, so you can provide multiple comma-separated keys for `GEMINI_API_KEY` and `GROQ_API_KEY`. 
+
+*(Note: You do not need Kaggle credentials — I pre-processed the 800MB raw dataset into a lightweight 4MB JSON file included in this repo to save you time. However, if you wish to reproduce the dataset from scratch, you can add Kaggle keys to `.env` and run `python scripts/prepare_data.py` and `python scripts/build_conversations.py` before starting the backend).*
 
 ### Step 3: Start the Backend API
 ```bash
