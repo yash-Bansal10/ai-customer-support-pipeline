@@ -54,13 +54,16 @@ class Retriever:
         results = []
         # distances[0] and indices[0] because we only sent one query
         for dist, idx in zip(distances[0], indices[0]):
+            if dist > 1.2:
+                continue # Hard relevance threshold to prevent hallucinating on bad evidence
+                
             if idx < len(self.documents):
                 doc = self.documents[idx]
                 results.append(HistoricalEvidence(
                     conversation_id=str(doc.get('conversation_id', idx)),
                     customer_message=doc.get('customer_message', ''),
                     brand_response=doc.get('brand_response', ''),
-                    similarity_score=float(1.0 / (1.0 + dist)) # simple inverse distance
+                    similarity_score=float(dist) # Raw L2 Distance instead of misleading percentage
                 ))
         return results
 
